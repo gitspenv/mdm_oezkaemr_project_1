@@ -102,23 +102,82 @@
             <td>4</td>
             <td>Gemeindegrössenklasse mit 20'000 - 49'999 Einwohnern</td>
         </tr>
+        <tr>
+            <td>5</td>
+            <td>Gemeindegrössenklasse mit 50'000 - 99'999 Einwohnern</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Gemeindegrössenklasse mit 100'000 und mehr Einwohnern</td>
+        </tr>
     </tbody>
 </table>
 
 <style>
+
+    :global(body) {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    }
+
+    h1, h2 {
+        color: #000;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+
+    input[type="number"]:focus {
+        border-color: #4890dc;
+        outline: none;
+    }
+
+    button {
+        width: 100%;
+        background-color: #4890dc;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: #3578b7;
+    }
+
     table {
         width: 100%;
         border-collapse: collapse;
+        margin-top: 20px;
     }
+
     th, td {
         text-align: left;
-        padding: 8px;
+        padding: 12px;
     }
+
     tr:nth-child(even) {
         background-color: #f2f2f2;
     }
+
     th {
         background-color: #4890dc;
         color: white;
     }
+
 </style>
