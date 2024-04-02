@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="./_app/immutable/assets/2.C2d05YzI.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.DpvZCxV2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.Cwpn0f7v.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.BvLojk_z.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.DI4uO8qA.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CIe1fUae.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.9DOiIDS8.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.e4yo70wh.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <h1 data-svelte-h="svelte-1lempfs">BFS Energie Model Prediction</h1> <h2 data-svelte-h="svelte-1f3kqo2">2020 Dataset</h2> <form><p><strong data-svelte-h="svelte-ze7w9b">Jährliche Wassergewinnung (in 1000 m3), Total:</strong> <input type="number" min="0" value="0"></p> <p><strong data-svelte-h="svelte-8ipxcp">Jährliche Wassergewinnung (in 1000 m3), Quellwasser:</strong> <input type="number" min="0" value="0"></p> <p><strong data-svelte-h="svelte-xvlvl2">Jährliche Wassergewinnung (in 1000 m3), See- und Flusswasser:</strong> <input type="number" min="0" value="0"></p> <p><strong data-svelte-h="svelte-1lgq7bd">Tägliche Wasserabgabe (m3), Mittel:</strong> <input type="number" min="0" value="0"></p> <p><strong data-svelte-h="svelte-1h5bnod">Liter je Einwohner/in und Tag des Versorgungsgebietes, Mittel:</strong> <input type="number" min="0" value="0"></p> <p><strong data-svelte-h="svelte-4oik4s">Gasverkauf (in 1000 kWh), Total:</strong> <input type="number" min="0" value="0"></p> <button type="submit" data-svelte-h="svelte-1b4nzxo">Predict</button></form> <p>n.a.</p>  <h2 data-svelte-h="svelte-e69kt">Populationsklassen</h2> <table class="svelte-74xfl0" data-svelte-h="svelte-10hexkp"><thead><tr class="svelte-74xfl0"><th class="svelte-74xfl0">Populationsklasse</th> <th class="svelte-74xfl0">Beschreibung</th></tr></thead> <tbody><tr class="svelte-74xfl0"><td class="svelte-74xfl0">1</td> <td class="svelte-74xfl0">Gemeindegrössenklasse mit weniger als 10&#39;000 Einwohnern</td></tr> <tr class="svelte-74xfl0"><td class="svelte-74xfl0">2</td> <td class="svelte-74xfl0">Gemeindegrössenklasse mit 10&#39;000 - 14&#39;999 Einwohnern</td></tr> <tr class="svelte-74xfl0"><td class="svelte-74xfl0">3</td> <td class="svelte-74xfl0">Gemeindegrössenklasse mit 15&#39;000 - 19&#39;999 Einwohnern</td></tr> <tr class="svelte-74xfl0"><td class="svelte-74xfl0">4</td> <td class="svelte-74xfl0">Gemeindegrössenklasse mit 20&#39;000 - 49&#39;999 Einwohnern</td></tr></tbody> </table> 
+			
+			<script>
+				{
+					__sveltekit_11jdpaz = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.DpvZCxV2.js"),
+						import("./_app/immutable/entry/app.DI4uO8qA.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
